@@ -1,16 +1,52 @@
-# React + Vite
+# 🚀 DataX Solutions Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Project Status](https://img.shields.io/badge/Status-Completed-success)
+![Tech Stack](https://img.shields.io/badge/Stack-React_|_Tailwind_|_Framer_Motion-blue)
 
-Currently, two official plugins are available:
+A modern, high-performance, and fully responsive landing page built for a data solutions agency. This project features complex UI layouts, staggered animations, and optimized asset handling, deployed on Vercel.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
 
-## React Compiler
+**View the live site here:** 👉 **[https://landing-page-git-main-divil-thakurs-projects.vercel.app/)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **📱 Fully Responsive:** Optimized for Mobile, Tablet (iPad), and Desktop screens with custom breakpoints.
+* **🎨 Modern UI/UX:** Features overlapping elements, negative margins, and a distinct "X" background pattern layout.
+* **⚡ Smooth Animations:** Powered by **Framer Motion** for entrance effects, scroll reveals, and hover interactions.
+* **📂 Data-Driven Components:** Content (Clients, Tech Stack, Case Studies) is managed via a separate `data.js` file for easy updates.
+* **👆 Interactivity:** Includes a custom mobile navigation menu and a "Scroll to Top" button that appears dynamically.
+* **🚀 Optimized Assets:** All images are imported through the build pipeline to ensure correct loading in production environments.
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+| :--- | :--- |
+| **React (Vite)** | Frontend Framework & Build Tool |
+| **Tailwind CSS** | Utility-first Styling |
+| **Framer Motion** | Animation Library |
+| **JavaScript (ES6+)** | Logic & Functionality |
+| **Vercel** | Deployment & Hosting |
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+├── assets/
+│   └── images/       # All static assets (imported in components)
+├── components/
+│   ├── Hero.jsx      # Main entry section with animations
+│   ├── Navbar.jsx    # Responsive navigation with absolute centering
+│   ├── About.jsx     # Overlapping layout section
+│   ├── ContactFooter.jsx # Footer with broad background pattern
+│   ├── ...           # Other sections (Solutions, Clients, etc.)
+├── data/
+│   └── data.js       # Centralized data arrays for easy content management
+├── App.jsx           # Main layout wrapper & Scroll-to-top logic
+└── main.jsx          # Entry point
