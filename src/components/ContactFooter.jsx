@@ -1,6 +1,16 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import XWhite from '../assets/images/XWhite.png'
+import facebook from '../assets/images/facebook.png';
+import linkedIn from '../assets/images/linkedIn.png';
+import twitter from '../assets/images/twitter.png';
+import instagram from '../assets/images/instagram.png';
+const socialIcons = [
+    { name: 'facebook', src: facebook },
+    { name: 'linkedIn', src: linkedIn },
+    { name: 'twitter', src: twitter },
+    { name: 'instagram', src: instagram },
+];
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -113,16 +123,16 @@ const ContactFooter = () => {
                                 Get Connected
                             </h3>
                             <div className='flex space-x-3'>
-                                {['facebook', 'linkedIn', 'twitter', 'instagram'].map((social) => (
+                                {socialIcons.map((social) => (
                                     <motion.div
-                                        key={social}
+                                        key={social.name}
                                         whileHover={{ scale: 1.1, rotate: 5 }}
                                         whileTap={{ scale: 0.95 }}
                                         className=" rounded-sm p-1 cursor-pointer hover:bg-gray-600 transition-colors"
                                     >
                                         <img
-                                            src={`./src/assets/images/${social}.png`}
-                                            alt={social}
+                                            src={social.src}
+                                            alt={social.name}
                                             className='w-6 h-6 md:w-8 md:h-8 object-contain'
                                         />
                                     </motion.div>

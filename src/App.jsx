@@ -5,6 +5,7 @@ import OurClients from './components/Clients'
 import CaseStudies from './components/CaseStudy'
 import ContactFooter from './components/ContactFooter'
 import AboutHero from './components/About'
+import fadedBg from './assets/images/faded-bg.png'
 
 const App = () => {
 
@@ -41,7 +42,7 @@ const App = () => {
       <div className='relative w-full'>
         <div className='absolute top-0 left-0 w-full h-full z-0 pointer-events-none'>
           <img
-            src="./src/assets/images/faded-bg.png"
+            src={fadedBg}
             alt="Background Pattern"
             className='w-full h-full object-cover '
           />
