@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Button from './Button'
+import icon from '../assets/images/icon.png'
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -39,9 +40,9 @@ const Navbar = () => {
                     transition={{ duration: 0.5 }}
                 >
                     <img
-                        src="./src/assets/images/icon.png"
+                        src={icon}
                         alt="logo"
-                        className="h-8 md:h-10 lg:h-12 object-contain"
+                        className="h-8 md:h-10 lg:h-12 object-contain "
                     />
                 </motion.div>
 

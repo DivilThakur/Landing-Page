@@ -1,7 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { caseStudiesData } from '../data/data'
-
+import Case from '../assets/images/Case.png'
+import Studies from '../assets/images/studies.png'
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -38,13 +39,13 @@ const CaseStudies = () => {
                 >
 
                     <img
-                        src="./src/assets/images/Case.png"
+                        src={Case}
                         alt="Case"
                         className='h-12 md:h-20 lg:h-24 object-contain mb-2 md:mb-4'
                     />
 
                     <img
-                        src="./src/assets/images/studies.png"
+                        src={Studies}
                         alt="Studies"
                         className='h-12 md:h-20 lg:h-24 object-contain'
                     />

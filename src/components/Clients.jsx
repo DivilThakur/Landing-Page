@@ -1,7 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { clientsData } from '../data/data'
-
+import Our from '../assets/images/our.png'
+import ClientsImg from '../assets/images/clients.png'
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -35,13 +36,13 @@ const OurClients = () => {
                     className='mb-12 md:mb-16 flex flex-col items-start'
                 >
                     <img
-                        src="./src/assets/images/our.png"
+                        src={Our}
                         alt="Our"
                         className='h-12 md:h-20 lg:h-24 object-contain mb-2 md:mb-4'
                     />
 
                     <img
-                        src="./src/assets/images/clients.png"
+                        src={ClientsImg}
                         alt="Clients"
                         className='h-12 md:h-20 lg:h-24 object-contain'
                     />

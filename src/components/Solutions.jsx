@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { DataAnalysis, Technology, techStack } from '../data/data'
-
+import solutions from '../assets/images/solutions.png'
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -94,7 +94,7 @@ const Solutions = () => {
                     className='mb-16 md:mb-20'
                 >
                     <img
-                        src="./src/assets/images/solutions.png"
+                        src={solutions}
                         alt="Solutions"
                         className='w-full max-w-lg mb-4 h-auto object-contain object-left'
                     />

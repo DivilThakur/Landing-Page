@@ -1,5 +1,7 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import About from '../assets/images/About.png';
+import DataXSolutions from '../assets/images/dataxsolutions.png';
+import Watch from '../assets/images/watch.png';
 
 const AboutHero = () => {
     const fadeInUp = {
@@ -28,7 +30,7 @@ const AboutHero = () => {
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
-                    src="./src/assets/images/About.png"
+                    src={About}
                     alt="About"
                     className="hidden lg:block absolute lg:-top-20 lg:-left-[15%] lg:w-[35%] z-10 object-contain select-none pointer-events-none"
                 />
@@ -37,7 +39,7 @@ const AboutHero = () => {
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, delay: 0.2 }}
-                    src="./src/assets/images/dataxsolutions.png"
+                    src={DataXSolutions}
                     alt="Data X Solutions"
                     className="hidden lg:block absolute lg:top-[10%] lg:-left-[15%] lg:w-[55%] z-10 object-contain select-none pointer-events-none"
                 />
@@ -50,7 +52,7 @@ const AboutHero = () => {
                     className="hidden md:flex absolute -bottom-2.5 md:right-20 lg:left-0 z-30 h-[80%] items-end pointer-events-none"
                 >
                     <img
-                        src="./src/assets/images/watch.png"
+                        src={Watch}
                         alt="Stopwatch"
                         className="h-full w-auto object-contain drop-shadow-2xl"
                     />

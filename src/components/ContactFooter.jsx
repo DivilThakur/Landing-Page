@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-
+import XWhite from '../assets/images/XWhite.png'
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -37,7 +37,7 @@ const ContactFooter = () => {
                 className='absolute inset-y-0 right-0 w-[80%] lg:w-[70%] z-0 hidden lg:block pointer-events-none'
             >
                 <img
-                    src="./src/assets/images/XWhite.png"
+                    src={XWhite}
                     alt="Pattern"
 
                     className='w-full h-full object-cover object-center'

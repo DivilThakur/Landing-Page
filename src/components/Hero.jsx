@@ -1,6 +1,14 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Navbar from './Navbar'
+import levels from '../assets/images/levels.png'
+import left from '../assets/images/left.png'
+import right from '../assets/images/right.png'
+import barchart from '../assets/images/barchart.png'
+import graph from '../assets/images/graph.png'
+import homePic from '../assets/images/homePic.png'
+import xDark from '../assets/images/XDark.png'
+import learnMore from '../assets/images/learnMore.png'
 
 const Hero = () => {
     return (
@@ -17,7 +25,7 @@ const Hero = () => {
                     transition={{ duration: 0.5, delay: 1.1 }}
                     className=' hidden xl:block absolute bottom-10 left-1/3 z-50 '
                 >
-                    <img src="./src/assets/images/levels.png" alt="" className='w-40' />
+                    <img src={levels} alt="" className='w-40' />
                 </motion.div>
 
 
@@ -27,7 +35,7 @@ const Hero = () => {
                     transition={{ duration: 0.5, delay: 1.2 }}
                     className='hidden xl:block absolute bottom-1/2 left-2 z-50'
                 >
-                    <img src="./src/assets/images/left.png" alt="" className='w-8' />
+                    <img src={left} alt="" className='w-8' />
                 </motion.div>
 
 
@@ -37,7 +45,7 @@ const Hero = () => {
                     transition={{ duration: 0.5, delay: 1.3 }}
                     className='hidden xl:block absolute bottom-1/2 right-30 z-50'
                 >
-                    <img src="./src/assets/images/right.png" alt="" className='w-8' />
+                    <img src={right} alt="" className='w-8' />
                 </motion.div>
 
                 <motion.div
@@ -46,7 +54,7 @@ const Hero = () => {
                     transition={{ duration: 0.5, delay: 1.4 }}
                     className='hidden md:block absolute bottom-1/3 right-8  xl:right-1/7 z-50'
                 >
-                    <img src="./src/assets/images/barchart.png" alt="" className=' w-20 lg:w-30 xl:w-35' />
+                    <img src={barchart} alt="" className=' w-20 lg:w-30 xl:w-35' />
                 </motion.div>
 
 
@@ -56,7 +64,7 @@ const Hero = () => {
                     transition={{ duration: 0.5, delay: 1.5 }}
                     className='hidden md:block absolute bottom-[28%] right-[23%] lg:bottom-[30%] lg:right-[23%] xl:bottom-1/4 xl:right-[36%] z-50'
                 >
-                    <img src="./src/assets/images/graph.png" alt="" className=' w-10 lg:w-15 xl:w-30' />
+                    <img src={graph} alt="" className=' w-10 lg:w-15 xl:w-30' />
                 </motion.div>
 
 
@@ -69,12 +77,12 @@ const Hero = () => {
 
                         investments from data assets.</p>
                     <button>
-                        <img className='w-32 xl:w-40' src="./src/assets/learnMore.png" alt="" />
+                        <img className='w-32 xl:w-40' src={learnMore} alt="" />
                     </button>
                 </div>
                 {/* right  */}
                 <div className='hidden xl:flex justify-end '>
-                    <img src="./src/assets/images/XDark.png" alt="Hero" />
+                    <img src={xDark} alt="Hero" />
                 </div>
 
 
@@ -84,7 +92,7 @@ const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className='absolute hidden md:flex items-center justify-end bottom-0 right-0 lg:right-0 xl:-bottom-15 xl:right-20  w-full '
                 >
-                    <img src="./src/assets/images/homePic.png" alt="" className='w-100 lg:w-130 xl:w-2/3 ' />
+                    <img src={homePic} alt="" className='w-100 lg:w-130 xl:w-2/3 ' />
                 </motion.div>
             </div>
         </div>
