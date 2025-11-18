@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Manrope;
+    src: url("../src/assets/fonts/Manrope-Regular.ttf");
+}
+
+@import "tailwindcss";
+
+@theme {
+    --font-Manrope: 'Manrope', sans-serif;
+}
+
+@layer base {
+    body {
+        color: #01558E;
+        font-family: var(--font-Manrope);
+    }
+}
